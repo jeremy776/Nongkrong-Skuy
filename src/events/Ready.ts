@@ -8,8 +8,8 @@ export default class ReadyEvent extends Event {
     })
   }
   
-  run(): {
-    console.log(`Login to ${this.client.user?.tag}`);
+  async run(): Promise<void> {
+    console.log('Ready!');
+    this.client.user?.setActivity(`help | ${this.client.guilds.cache.size} servers`, { type: "WATCHING" });
   }
-  
 }

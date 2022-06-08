@@ -1,5 +1,5 @@
 {
-  "name": "Inbot",
+  "name": "inbot",
   "version": "0.0.1",
   "description": "A investation simulation bot in discord",
   "main": "dist/index.js",
@@ -20,6 +20,7 @@
     "ts-node": "^10.8.1",
     "tsc-alias": "^1.6.9",
     "tsconfig-paths": "^4.0.0",
-    "typescript": "^4.7.3"
+    "typescript": "^4.7.3",
+    "ts-node-dev": "^2.0.0"
   }
 }

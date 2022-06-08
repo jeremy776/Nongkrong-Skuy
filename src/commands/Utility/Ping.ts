@@ -10,6 +10,6 @@ export default class PingCommand extends Command {
   }
   
   async run(message: Message, args: string[]): Promise<Message | void> {
-    return message.reply("Hello");
+    return message.reply(`${this.client.ws.ping}ms`);
   } 
 }

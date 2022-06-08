@@ -1,11 +1,14 @@
 import Client from '@inBot/Structures/Client';
 import { Intents } from "discord.js";
+import config from "@inBot/config";
 
 const client = new Client({
-  token: "NzAyODc0MDI1MTg5MTc5NTMz.GpoaZs.IvbS6onHnTem-jSoKzGw797u4kz6pUklOOYKNY",
-  prefix: "k",
+  token: config.token,
+  prefix: config.prefix,
+  owners: ["428922145108656139"],
   intents: [
-    Intents.FLAGS.GUILDS
+    Intents.FLAGS.GUILDS,
+    Intents.FLAGS.GUILD_MESSAGES
   ]
 });
 

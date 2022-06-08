@@ -2,6 +2,11 @@ import { Message } from "discord.js";
 import Client from "@inBot/Structures/Client";
 
 export default abstract class Command {
+  name: string;
+  cooldown: number;
+  description: string;
+  devOnly: boolean;
+
   constructor(protected client: Client, ops: any) {
     this.client = client;
     this.name = ops.name;

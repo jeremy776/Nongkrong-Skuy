@@ -1,11 +1,14 @@
-import { ClientOptions, Client } from 'discord.js';
+import { ClientOptions, Client, Collection } from 'discord.js';
 import CommandManager from "@inBot/Structures/Command/CommandManager";
 import EventManager from "@inBot/Structures/Event/EventManager";
+import config from "@inBot/config";
 
 export default class InBot extends Client {
   public command = new CommandManager(this);
   public event = new EventManager(this);
-  
+  public config: typeof config = config;
+  public categorys: string[] = [];
+
   constructor(ops: ClientOptions) {
     super(ops);
   }
@@ -18,5 +21,13 @@ export default class InBot extends Client {
     } catch(e) {
       console.log(e)
     }
+  }
+}
+
+declare module "discord.js" {
+  interface ClientOptions {
+    token: string;
+    prefix: string;
+    owners: string[];
   }
 }

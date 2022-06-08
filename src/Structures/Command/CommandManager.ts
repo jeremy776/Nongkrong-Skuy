@@ -12,6 +12,7 @@ export default class CommandManager {
   async load(): Promise<void> {
     try {
       const folder = fs.readdirSync(path.join(__dirname, "../../commands"));
+      this.client.categorys = folder;
       
       folder.forEach((f) => {
         const cmds = fs.readdirSync(path.join(__dirname, "../../commands", f), {
