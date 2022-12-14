@@ -1,7 +1,6 @@
 {
-  "name": "inbot",
+  "name": "nongsky",
   "version": "0.0.1",
-  "description": "A investation simulation bot in discord",
   "main": "dist/index.js",
   "author": "Jeremy",
   "license": "MIT",
