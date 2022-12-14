@@ -26,6 +26,8 @@ export default class EvalCommand extends Command {
 
             if(res.length > 2000) {
                 return message.channel.send(`${p.substr(0, 2000)}...`);
+            } else if(res.length > 1024 && res.length < 1999) {
+                return console.log(p);
             }
             let embed = new MessageEmbed()
             .addField(`**Output**`, `\`\`\`js\n${p}\`\`\``)
