@@ -1,9 +1,9 @@
 import { ClientOptions, Client, Collection } from 'discord.js';
-import CommandManager from "@inBot/Structures/Command/CommandManager";
-import EventManager from "@inBot/Structures/Event/EventManager";
-import config from "@inBot/config";
+import CommandManager from "@nongsky/Structures/Command/CommandManager";
+import EventManager from "@nongsky/Structures/Event/EventManager";
+import config from "@nongsky/config";
 
-export default class InBot extends Client {
+export default class NongSky extends Client {
   public command = new CommandManager(this);
   public event = new EventManager(this);
   public config: typeof config = config;

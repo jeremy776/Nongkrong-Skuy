@@ -1,6 +1,6 @@
 import { Collection } from "discord.js";
 import Command from "./Command";
-import Client from "@inBot/Structures/Client";
+import Client from "@nongsky/Structures/Client";
 import fs from "fs";
 import path from "path";
 

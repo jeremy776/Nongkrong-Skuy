@@ -1,5 +1,5 @@
-import Client from "@inBot/Structures/Client";
-import Event from "@inBot/Structures/Event/Event";
+import Client from "@nongsky/Structures/Client";
+import Event from "@nongsky/Structures/Event/Event";
 
 export default class MessageCreateEvent extends Event {
     constructor(protected client: Client) {

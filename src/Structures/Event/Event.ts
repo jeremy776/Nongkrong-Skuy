@@ -1,4 +1,4 @@
-import Client from "@inBot/Structures/Client";
+import Client from "@nongsky/Structures/Client";
 
 export default abstract class Event {
   name: string;

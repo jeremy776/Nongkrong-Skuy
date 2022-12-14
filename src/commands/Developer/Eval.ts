@@ -1,6 +1,6 @@
-import Client from "@inBot/Structures/Client";
+import Client from "@nongsky/Structures/Client";
 import { Message, MessageEmbed } from "discord.js";
-import Command from "@inBot/Structures/Command/Command";
+import Command from "@nongsky/Structures/Command/Command";
 
 interface ParseEval {
     evaled: string;
@@ -12,7 +12,8 @@ export default class EvalCommand extends Command {
         super(client, {
             name: "eval",
             description: "Evaluates code",
-            devOnly: true
+            devOnly: true,
+            category: 'Developer'
         })
     }
 

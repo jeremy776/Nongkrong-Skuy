@@ -1,4 +1,4 @@
-import Client from "@inBot/Structures/Client";
+import Client from "@nongsky/Structures/Client";
 import fs from "fs";
 import path from "path";
 

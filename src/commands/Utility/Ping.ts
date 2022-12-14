@@ -1,11 +1,12 @@
-import Client from "@inBot/Structures/Client";
+import Client from "@nongsky/Structures/Client";
 import { Message } from "discord.js";
-import Command from "@inBot/Structures/Command/Command";
+import Command from "@nongsky/Structures/Command/Command";
 
 export default class PingCommand extends Command {
   constructor(protected client: Client) {
     super(client, {
-      name: "ping"
+      name: "ping",
+      category: 'Utility'
     })
   }
   

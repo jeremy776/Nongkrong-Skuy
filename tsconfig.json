@@ -18,7 +18,7 @@
     "noImplicitAny": false,
     "useUnknownInCatchVariables": false,
     "paths": {
-      "@inBot/*": ["./src/*"]
+      "@nongsky/*": ["./src/*"]
     }
   },
   "include": ["src/**/*", "src/**/*.json"],

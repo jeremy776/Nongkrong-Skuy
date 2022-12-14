@@ -1,4 +1,4 @@
 export = {
     prefix: "!",
-    token: "NzAyODc0MDI1MTg5MTc5NTMz.GpoaZs.IvbS6onHnTem-jSoKzGw797u4kz6pUklOOYKNY"
+    token: "MTA1MjQ3OTg3MTE1MjAyOTcxNg.GK42sE.pEc0XNhjVMgtDK8CLf9AsOPQyYZkVLbjQoQ6c8"
 }

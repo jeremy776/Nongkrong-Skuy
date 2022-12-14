@@ -1,5 +1,5 @@
-import Client from "@inBot/Structures/Client";
-import Event from "@inBot/Structures/Event/Event";
+import Client from "@nongsky/Structures/Client";
+import Event from "@nongsky/Structures/Event/Event";
 
 export default class ReadyEvent extends Event {
   constructor(protected client: Client) {
@@ -10,6 +10,6 @@ export default class ReadyEvent extends Event {
   
   async run(): Promise<void> {
     console.log('Ready!');
-    this.client.user?.setActivity(`help | ${this.client.guilds.cache.size} servers`, { type: "WATCHING" });
+    this.client.user?.setActivity(`Nongkrong Skuy | discord.gg/NongSky`, { type: "WATCHING" });
   }
 }
